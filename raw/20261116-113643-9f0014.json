@@ -1,0 +1,17 @@
+{
+  "id": "20261116-113643-9f0014",
+  "timestamp": "2026-11-16T11:36:43.470917+00:00",
+  "source_type": "text",
+  "source_ref": "manual",
+  "title": "Vector Embeddings & Semantic Search",
+  "raw_content": "Vector Embeddings & Semantic Search: SentenceTransformers all-MiniLM-L6-v2 maps sentences into a dense 384-dimensional vector space. Measuring cosine similarity between vectors enables semantic search that captures conceptual meaning rather than exact keyword matches.",
+  "content_hash": "dea2072f39ef1fa0b87b34f1126eaceb4b985aa81ae9f6927b2c1b2963ef14c1",
+  "tags": [
+    "ai",
+    "embeddings",
+    "nlp",
+    "rag"
+  ],
+  "metadata": {},
+  "processed": false
+}

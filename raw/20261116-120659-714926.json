@@ -1,0 +1,18 @@
+{
+  "id": "20261116-120659-714926",
+  "timestamp": "2026-11-16T12:06:59.820804+00:00",
+  "source_type": "file",
+  "source_ref": "C:\\Users\\jagad\\OneDrive\\Desktop\\53 Weeks\\53-weeks-of-cybersecurity\\Test1.txt",
+  "title": "Test1",
+  "raw_content": "Hello\n",
+  "content_hash": "185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969",
+  "tags": [],
+  "metadata": {
+    "file_name": "Test1.txt",
+    "file_path": "C:\\Users\\jagad\\OneDrive\\Desktop\\53 Weeks\\53-weeks-of-cybersecurity\\Test1.txt",
+    "file_size_bytes": 7,
+    "extension": ".txt",
+    "warnings": []
+  },
+  "processed": false
+}

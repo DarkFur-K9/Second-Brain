@@ -1,0 +1,28 @@
+# Environment & Secrets
+.env
+.env.local
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Local Embedding & Vector Caches
+wiki/.embeddings.npz
+*.npz
+
+# Streamlit Local Runtime
+.streamlit/secrets.toml
+
+# OS Generated
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,17 @@
+{
+  "id": "20261116-113704-6aa05d",
+  "timestamp": "2026-11-16T11:37:04.749969+00:00",
+  "source_type": "text",
+  "source_ref": "manual",
+  "title": "Streamlit Architecture Patterns",
+  "raw_content": "Streamlit Architecture Patterns: Use st.cache_resource for heavy non-serializable objects (like PyTorch / SentenceTransformer models or database pools) so they load once per process. Use st.cache_data for computation results or DataFrames. Keep user state strictly in st.session_state to avoid cross-session pollution.",
+  "content_hash": "f5cb0c300d4f60e3f324f463d04c839773f579792557239199ab76def8b9bece",
+  "tags": [
+    "python",
+    "streamlit",
+    "frontend",
+    "architecture"
+  ],
+  "metadata": {},
+  "processed": false
+}

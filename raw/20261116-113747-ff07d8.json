@@ -1,0 +1,17 @@
+{
+  "id": "20261116-113747-ff07d8",
+  "timestamp": "2026-11-16T11:37:47.861545+00:00",
+  "source_type": "text",
+  "source_ref": "manual",
+  "title": "Knowledge Graphs with Vis.js",
+  "raw_content": "Knowledge Graphs with Vis.js: Force-directed layouts simulate physical forces (spring tension on edges and Coulomb repulsion on nodes) using algorithms like Barnes-Hut or ForceAtlas2. Node sizes reflect degree centrality (number of connected notes), while node colors reflect thematic clusters or categories.",
+  "content_hash": "08c72ec85b84c8c301d5bab1ef391d46338c45b67de8ff1fda6184f3bc348341",
+  "tags": [
+    "graph",
+    "visualization",
+    "visjs",
+    "ui"
+  ],
+  "metadata": {},
+  "processed": false
+}

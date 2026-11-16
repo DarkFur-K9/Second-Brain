@@ -1,0 +1,17 @@
+{
+  "id": "20261116-113617-7f5da5",
+  "timestamp": "2026-11-16T11:36:17.711187+00:00",
+  "source_type": "text",
+  "source_ref": "manual",
+  "title": "FastAPI Production Architecture",
+  "raw_content": "FastAPI Production Architecture: Key principles include using lifespan handlers for database connection pools, strict Pydantic v2 schemas for request validation, structured JSON logging with correlation IDs, and dependency injection for authentication and database sessions.",
+  "content_hash": "b861410be83ea93da3b1541f079ca2d6f37fb352699d2b6585e07a48e48f6982",
+  "tags": [
+    "python",
+    "fastapi",
+    "backend",
+    "architecture"
+  ],
+  "metadata": {},
+  "processed": false
+}

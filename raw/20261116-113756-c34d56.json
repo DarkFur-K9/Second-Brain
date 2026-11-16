@@ -1,0 +1,17 @@
+{
+  "id": "20261116-113756-c34d56",
+  "timestamp": "2026-11-16T11:37:56.021212+00:00",
+  "source_type": "text",
+  "source_ref": "manual",
+  "title": "RAG Grounding & Hallucination Guardrails",
+  "raw_content": "RAG Guardrails: Retrieval-Augmented Generation prevents hallucination by constraining the LLM to only state facts explicitly supported by retrieved context chunks. Setting a cosine similarity floor (e.g. 0.40) ensures the system says 'I do not have notes on this' when queries fall outside the personal vault.",
+  "content_hash": "93ecedc439125e1e9541e4784cd524421a4526949ae33b0d77ebec64e8f5b934",
+  "tags": [
+    "ai",
+    "rag",
+    "llm",
+    "safety"
+  ],
+  "metadata": {},
+  "processed": false
+}
