@@ -143,6 +143,39 @@ def get_vault_statistics() -> Dict[str, Any]:
         return {"total_notes": 0, "total_edges": 0, "categories": {}}
 
 
+@st.cache_data
+def get_all_notes_catalog() -> List[Dict[str, Any]]:
+    """Load metadata and contents of all wiki notes for vault browsing."""
+    import re
+    from src.link import load_wiki_notes, DEFAULT_WIKI_DIR
+    notes = load_wiki_notes(DEFAULT_WIKI_DIR)
+    backlinks_map: Dict[str, List[str]] = {n.slug: [] for n in notes}
+    wikilink_regex = re.compile(r"\[\[(.*?)\]\]")
+    for n in notes:
+        targets = wikilink_regex.findall(n.raw_text)
+        for t in targets:
+            norm_t = t.strip().lower().replace(" ", "-")
+            if norm_t in backlinks_map and norm_t != n.slug:
+                backlinks_map[norm_t].append(n.title)
+
+    catalog = []
+    for n in notes:
+        outbound = wikilink_regex.findall(n.raw_text)
+        catalog.append({
+            "path": str(n.path),
+            "slug": n.slug,
+            "title": n.title,
+            "category": n.category,
+            "tags": n.tags if isinstance(n.tags, list) else [],
+            "summary": n.summary,
+            "body": n.body,
+            "raw_text": n.raw_text,
+            "outbound_links": list(set(outbound)),
+            "backlinks": list(set(backlinks_map.get(n.slug, []))),
+        })
+    return catalog
+
+
 # Session State Initialization
 if "messages" not in st.session_state:
     st.session_state.messages = [
@@ -248,9 +281,10 @@ with st.sidebar:
 # =========================================================================
 # MAIN CONTENT TABS
 # =========================================================================
-tab_ask, tab_graph, tab_capture = st.tabs([
+tab_ask, tab_graph, tab_browse, tab_capture = st.tabs([
     "🔮 Ask Your Brain",
     "🕸️ Living Brain (Visual Graph)",
+    "📖 Browse Vault",
     "📥 Ingest Knowledge",
 ])
 
@@ -352,7 +386,102 @@ with tab_graph:
 
 
 # -------------------------------------------------------------------------
-# TAB 3: INGEST KNOWLEDGE
+# TAB 3: BROWSE VAULT (NOTE READER & EDITOR)
+# -------------------------------------------------------------------------
+with tab_browse:
+    st.markdown("### 📖 Browse & Inspect Knowledge Vault")
+    st.caption("Read formatted notes, explore bidirectional backlinks, or edit content directly in your Second Brain.")
+
+    catalog = get_all_notes_catalog()
+    if not catalog:
+        st.info("No notes found in your vault yet. Capture some notes to get started!")
+    else:
+        col_filter1, col_filter2 = st.columns([1, 2])
+        with col_filter1:
+            cat_filter = st.selectbox("Category Filter", ["All", "Projects", "Areas", "Resources", "Archives"])
+        with col_filter2:
+            search_query = st.text_input("Search Notes", placeholder="Filter by title, tag, or keyword...").strip().lower()
+
+        # Filter catalog
+        filtered_notes = catalog
+        if cat_filter != "All":
+            filtered_notes = [n for n in filtered_notes if n["category"] == cat_filter]
+        if search_query:
+            filtered_notes = [
+                n for n in filtered_notes
+                if search_query in n["title"].lower()
+                or search_query in n["summary"].lower()
+                or any(search_query in str(t).lower() for t in n["tags"])
+            ]
+
+        if not filtered_notes:
+            st.warning("No notes match the selected filters.")
+        else:
+            note_titles = [f"{n['title']} ({n['category']})" for n in filtered_notes]
+            selected_idx = st.selectbox("Select Note", range(len(filtered_notes)), format_func=lambda i: note_titles[i])
+            selected_note = filtered_notes[selected_idx]
+
+            st.markdown("---")
+            badge_class = f"badge-{selected_note['category'].lower()}"
+            st.markdown(
+                f"""
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+                    <h2 style="margin:0;color:#F8FAFC;">{selected_note['title']}</h2>
+                    <span class="{badge_class}">{selected_note['category']}</span>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+            if selected_note["summary"]:
+                st.info(f"💡 **Summary:** {selected_note['summary']}")
+
+            if selected_note["tags"]:
+                tags_str = " ".join([f"`#{t}`" for t in selected_note["tags"]])
+                st.markdown(f"🏷️ **Tags:** {tags_str}")
+
+            mode_read, mode_edit = st.tabs(["📖 Read Note", "✏️ Edit Note"])
+            with mode_read:
+                st.markdown(selected_note["body"])
+
+                st.markdown("---")
+                col_links, col_backlinks = st.columns(2)
+                with col_links:
+                    st.markdown("#### 🔗 Outbound Links")
+                    if selected_note["outbound_links"]:
+                        for l in selected_note["outbound_links"]:
+                            st.markdown(f"- `[[{l}]]`")
+                    else:
+                        st.caption("No outbound links in this note.")
+
+                with col_backlinks:
+                    st.markdown("#### 🔄 Inbound Backlinks")
+                    if selected_note["backlinks"]:
+                        for bl in selected_note["backlinks"]:
+                            st.markdown(f"- **{bl}**")
+                    else:
+                        st.caption("No notes link to this note yet.")
+
+            with mode_edit:
+                with st.form(f"edit_form_{selected_note['slug']}"):
+                    edited_text = st.text_area(
+                        "Raw Markdown (including Frontmatter)",
+                        value=selected_note["raw_text"],
+                        height=400,
+                    )
+                    save_submitted = st.form_submit_button("💾 Save Changes & Re-index", type="primary")
+                    if save_submitted:
+                        Path(selected_note["path"]).write_text(edited_text, encoding="utf-8")
+                        with st.spinner("Re-linking note and updating knowledge graph..."):
+                            auto_link_wiki()
+                            build_and_export()
+                            st.cache_data.clear()
+                        st.success("Note saved and Second Brain updated!")
+                        st.rerun()
+
+
+# -------------------------------------------------------------------------
+# TAB 4: INGEST KNOWLEDGE
 # -------------------------------------------------------------------------
 with tab_capture:
     st.markdown("### 📥 Capture Anything to Your Second Brain")
