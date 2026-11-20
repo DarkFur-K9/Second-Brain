@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecondSelf — Interactive Knowledge Brain</title>
+  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0E1117;
+      color: #FAFAFA;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    /* Header Bar */
+    #header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: rgba(14, 17, 23, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 100;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-badge {
+      background: linear-gradient(135deg, #FF4B4B, #8B5CF6);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .search-box {
+      position: relative;
+      width: 320px;
+    }
+
+    .search-box input {
+      width: 100%;
+      background: #1E293B;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      padding: 8px 14px;
+      color: #F8FAFC;
+      font-size: 13px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-box input:focus {
+      border-color: #8B5CF6;
+      box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.25);
+    }
+
+    /* Floating Filter Bar */
+    #filter-bar {
+      position: absolute;
+      top: 75px;
+      left: 20px;
+      z-index: 100;
+      display: flex;
+      gap: 8px;
+      background: rgba(15, 23, 42, 0.85);
+      padding: 6px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: #94A3B8;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover {
+      color: #F8FAFC;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .filter-btn.active {
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .dot-all { background: #A78BFA; }
+    .dot-projects { background: #EF4444; }
+    .dot-areas { background: #3B82F6; }
+    .dot-resources { background: #10B981; }
+    .dot-archives { background: #6B7280; }
+
+    /* Floating Physics Controls */
+    #controls-bar {
+      position: absolute;
+      bottom: 25px;
+      left: 20px;
+      z-index: 100;
+      display: flex;
+      gap: 8px;
+      background: rgba(15, 23, 42, 0.85);
+      padding: 6px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    .ctrl-btn {
+      background: #1E293B;
+      color: #CBD5E1;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .ctrl-btn:hover {
+      background: #334155;
+      color: #FFFFFF;
+    }
+
+    /* Graph Canvas */
+    #network-canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Inspection Slide-out Drawer */
+    #node-drawer {
+      position: absolute;
+      top: 60px;
+      right: -420px;
+      width: 400px;
+      height: calc(100vh - 60px);
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: 150;
+      padding: 24px;
+      overflow-y: auto;
+      transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    #node-drawer.open {
+      right: 0;
+    }
+
+    .drawer-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .drawer-close:hover {
+      color: #FFFFFF;
+    }
+
+    .drawer-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .drawer-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #F8FAFC;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+
+    .drawer-section {
+      margin-top: 18px;
+    }
+
+    .drawer-section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .drawer-summary {
+      color: #E2E8F0;
+      font-size: 14px;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .drawer-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .drawer-tag {
+      background: #1E293B;
+      color: #CBD5E1;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .connections-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .connection-item {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #93C5FD;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+
+    .connection-item:hover {
+      background: rgba(147, 197, 253, 0.12);
+    }
+
+    .connection-weight {
+      font-size: 11px;
+      color: #94A3B8;
+    }
+
+    /* Custom Tooltip Styling */
+    div.vis-tooltip {
+      position: absolute;
+      visibility: hidden;
+      background: #1E293B !important;
+      color: #F8FAFC !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      border-radius: 8px !important;
+      padding: 10px !important;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6) !important;
+      font-family: inherit !important;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    /* Stats Pill */
+    .stats-pill {
+      font-size: 12px;
+      color: #94A3B8;
+      background: #1E293B;
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div id="header">
+    <div class="brand">
+      <span>🧠 SecondSelf</span>
+      <span class="brand-badge">Living Brain</span>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="node-search" placeholder="Search notes by title or tag..." autocomplete="off">
+    </div>
+
+    <div class="stats-pill" id="stats-display">
+      Loading knowledge graph...
+    </div>
+  </div>
+
+  <!-- PARA Category Filter Pills -->
+  <div id="filter-bar">
+    <button class="filter-btn active" data-category="ALL"><span class="dot dot-all"></span> All Notes</button>
+    <button class="filter-btn" data-category="Projects"><span class="dot dot-projects"></span> Projects</button>
+    <button class="filter-btn" data-category="Areas"><span class="dot dot-areas"></span> Areas</button>
+    <button class="filter-btn" data-category="Resources"><span class="dot dot-resources"></span> Resources</button>
+    <button class="filter-btn" data-category="Archives"><span class="dot dot-archives"></span> Archives</button>
+  </div>
+
+  <!-- Interactive Controls -->
+  <div id="controls-bar">
+    <button class="ctrl-btn" id="btn-fit">🔍 Fit View</button>
+    <button class="ctrl-btn" id="btn-physics">⏸ Freeze Physics</button>
+    <button class="ctrl-btn" id="btn-zoom-in">➕</button>
+    <button class="ctrl-btn" id="btn-zoom-out">➖</button>
+  </div>
+
+  <!-- Canvas Container -->
+  <div id="network-canvas"></div>
+
+  <!-- Slide-out Node Inspector -->
+  <div id="node-drawer">
+    <button class="drawer-close" id="drawer-close-btn">&times;</button>
+    <div class="drawer-badge" id="drawer-badge">CATEGORY</div>
+    <h2 class="drawer-title" id="drawer-title">Note Title</h2>
+
+    <div class="drawer-section">
+      <div class="drawer-section-title">Summary</div>
+      <div class="drawer-summary" id="drawer-summary">No summary provided.</div>
+    </div>
+
+    <div class="drawer-section">
+      <div class="drawer-section-title">Tags</div>
+      <div class="drawer-tags" id="drawer-tags"></div>
+    </div>
+
+    <div class="drawer-section">
+      <div class="drawer-section-title">Connected Notes</div>
+      <ul class="connections-list" id="drawer-connections"></ul>
+    </div>
+
+    <div class="drawer-section" style="margin-top: 24px;">
+      <div class="drawer-section-title">File Location</div>
+      <div style="font-size: 11px; color: #64748B; word-break: break-all;" id="drawer-path">wiki/...</div>
+    </div>
+  </div>
+
+  <script>
+    // Embedded graph data injected by build_graph.py
+    const rawGraphData = /*{{GRAPH_DATA}}*/ null;
+
+    let network = null;
+    let allNodes = [];
+    let allEdges = [];
+    let nodesDataSet = null;
+    let edgesDataSet = null;
+    let physicsEnabled = true;
+
+    // Load graph data (either from embedded constant or fallback fetch)
+    async function initGraph() {
+      let data = rawGraphData;
+      if (!data) {
+        try {
+          const resp = await fetch('graph.json');
+          data = await resp.json();
+        } catch (err) {
+          console.error("Could not load graph.json", err);
+          document.getElementById('stats-display').innerText = "Error loading graph.json";
+          return;
+        }
+      }
+
+      allNodes = data.nodes || [];
+      allEdges = data.edges || [];
+
+      // Update header statistics
+      const totalNodes = allNodes.length;
+      const totalEdges = allEdges.length;
+      document.getElementById('stats-display').innerText = `${totalNodes} Notes • ${totalEdges} Semantic Connections`;
+
+      // Vis.js DataSets
+      nodesDataSet = new vis.DataSet(allNodes);
+      edgesDataSet = new vis.DataSet(allEdges);
+
+      const container = document.getElementById('network-canvas');
+
+      const options = {
+        nodes: {
+          shape: 'dot',
+          scaling: {
+            min: 14,
+            max: 42,
+            label: { min: 12, max: 18 }
+          },
+          borderWidth: 2,
+          shadow: {
+            enabled: true,
+            color: 'rgba(0,0,0,0.5)',
+            size: 10,
+            x: 0,
+            y: 4
+          }
+        },
+        edges: {
+          width: 1.5,
+          color: {
+            color: 'rgba(148, 163, 184, 0.35)',
+            highlight: '#93C5FD',
+            hover: '#60A5FA'
+          },
+          smooth: {
+            type: 'continuous',
+            roundness: 0.2
+          },
+          shadow: false
+        },
+        physics: {
+          enabled: true,
+          solver: 'forceAtlas2Based',
+          forceAtlas2Based: {
+            gravitationalConstant: -38,
+            centralGravity: 0.006,
+            springLength: 95,
+            springConstant: 0.16,
+            damping: 0.88,
+            avoidOverlap: 0.6
+          },
+          stabilization: {
+            enabled: true,
+            iterations: 120,
+            updateInterval: 25,
+            fit: true
+          }
+        },
+        interaction: {
+          hover: true,
+          hoverConnectedEdges: true,
+          selectConnectedEdges: true,
+          tooltipDelay: 150,
+          zoomView: true,
+          dragView: true
+        }
+      };
+
+      network = new vis.Network(container, { nodes: nodesDataSet, edges: edgesDataSet }, options);
+
+      // Node Click Handler -> Open Slide-out Drawer
+      network.on("click", function(params) {
+        if (params.nodes.length > 0) {
+          const selectedNodeId = params.nodes[0];
+          openDrawer(selectedNodeId);
+        }
+      });
+
+      // Canvas click (deselect) -> Close Drawer
+      network.on("click", function(params) {
+        if (params.nodes.length === 0) {
+          closeDrawer();
+        }
+      });
+    }
+
+    // Open Node Details Drawer
+    function openDrawer(nodeId) {
+      const node = allNodes.find(n => n.id === nodeId);
+      if (!node) return;
+
+      const drawer = document.getElementById('node-drawer');
+      const badge = document.getElementById('drawer-badge');
+      const title = document.getElementById('drawer-title');
+      const summary = document.getElementById('drawer-summary');
+      const tagsContainer = document.getElementById('drawer-tags');
+      const connList = document.getElementById('drawer-connections');
+      const pathEl = document.getElementById('drawer-path');
+
+      title.innerText = node.label || node.id;
+      badge.innerText = node.group || "Resource";
+      badge.style.background = (node.color && node.color.background) || "#8B5CF6";
+      summary.innerText = node.summary || "No summary provided.";
+      pathEl.innerText = node.path || `wiki/${node.group}/${node.id}.md`;
+
+      // Render tags
+      tagsContainer.innerHTML = '';
+      if (node.tags && node.tags.length > 0) {
+        node.tags.forEach(t => {
+          const span = document.createElement('span');
+          span.className = 'drawer-tag';
+          span.innerText = `#${t}`;
+          tagsContainer.appendChild(span);
+        });
+      } else {
+        tagsContainer.innerHTML = '<span style="color:#64748B;font-size:12px;">No tags</span>';
+      }
+
+      // Find all connected edges
+      connList.innerHTML = '';
+      const connectedEdges = allEdges.filter(e => e.from === nodeId || e.to === nodeId);
+      if (connectedEdges.length > 0) {
+        connectedEdges.forEach(e => {
+          const targetId = e.from === nodeId ? e.to : e.from;
+          const targetNode = allNodes.find(n => n.id === targetId);
+          if (targetNode) {
+            const li = document.createElement('li');
+            li.className = 'connection-item';
+            li.innerHTML = `
+              <span>${targetNode.label}</span>
+              <span class="connection-weight">sim: ${(e.weight || 0.75).toFixed(2)}</span>
+            `;
+            li.onclick = () => {
+              network.selectNodes([targetId]);
+              network.focus(targetId, { scale: 1.2, animation: true });
+              openDrawer(targetId);
+            };
+            connList.appendChild(li);
+          }
+        });
+      } else {
+        connList.innerHTML = '<li style="color:#64748B;font-size:13px;">No direct connections above threshold.</li>';
+      }
+
+      drawer.classList.add('open');
+    }
+
+    function closeDrawer() {
+      document.getElementById('node-drawer').classList.remove('open');
+    }
+
+    document.getElementById('drawer-close-btn').onclick = closeDrawer;
+
+    // Category Filter Buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        const cat = this.getAttribute('data-category');
+        if (cat === 'ALL') {
+          nodesDataSet.clear();
+          nodesDataSet.add(allNodes);
+        } else {
+          const filtered = allNodes.filter(n => n.group === cat);
+          nodesDataSet.clear();
+          nodesDataSet.add(filtered);
+        }
+        network.fit({ animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+      });
+    });
+
+    // Search Filter
+    document.getElementById('node-search').addEventListener('input', function(e) {
+      const q = e.target.value.trim().toLowerCase();
+      if (!q) {
+        network.unselectAll();
+        return;
+      }
+
+      const match = allNodes.find(n =>
+        n.label.toLowerCase().includes(q) ||
+        (n.tags && n.tags.some(t => t.toLowerCase().includes(q))) ||
+        (n.summary && n.summary.toLowerCase().includes(q))
+      );
+
+      if (match) {
+        network.selectNodes([match.id]);
+        network.focus(match.id, {
+          scale: 1.3,
+          animation: { duration: 500, easingFunction: 'easeInOutQuad' }
+        });
+      }
+    });
+
+    // Physics Controls
+    document.getElementById('btn-physics').addEventListener('click', function() {
+      physicsEnabled = !physicsEnabled;
+      network.setOptions({ physics: { enabled: physicsEnabled } });
+      this.innerText = physicsEnabled ? "⏸ Freeze Physics" : "▶ Resume Physics";
+    });
+
+    document.getElementById('btn-fit').addEventListener('click', function() {
+      network.fit({ animation: { duration: 500 } });
+    });
+
+    document.getElementById('btn-zoom-in').addEventListener('click', function() {
+      const currentScale = network.getScale();
+      network.moveTo({ scale: currentScale * 1.3, animation: true });
+    });
+
+    document.getElementById('btn-zoom-out').addEventListener('click', function() {
+      const currentScale = network.getScale();
+      network.moveTo({ scale: currentScale / 1.3, animation: true });
+    });
+
+    // Initialize on window load
+    window.addEventListener('DOMContentLoaded', initGraph);
+  </script>
+</body>
+</html>

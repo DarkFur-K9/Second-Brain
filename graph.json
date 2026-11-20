@@ -1,0 +1,990 @@
+{
+  "nodes": [
+    {
+      "id": "test-capture-entry",
+      "label": "Test Capture Entry",
+      "group": "Archives",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Test Capture Entry</div><div style='margin-bottom:6px;'><span style='background:#6B7280;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Archives</span> <span style='color:#9CA3AF;font-size:11px;'>• 2 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A minimal test file containing only the greeting &#x27;Hello&#x27;.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#test</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#placeholder</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#sample-data</span></div></div>",
+      "summary": "A minimal test file containing only the greeting 'Hello'.",
+      "tags": [
+        "test",
+        "placeholder",
+        "sample-data"
+      ],
+      "path": "wiki/Archives/test-capture-entry.md",
+      "degree": 2,
+      "value": 22,
+      "color": {
+        "background": "#6B7280",
+        "border": "#4B5563",
+        "highlight": {
+          "background": "#9CA3AF",
+          "border": "#374151"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "test-capture-file",
+      "label": "Test Capture File",
+      "group": "Archives",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Test Capture File</div><div style='margin-bottom:6px;'><span style='background:#6B7280;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Archives</span> <span style='color:#9CA3AF;font-size:11px;'>• 3 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A minimal test file containing only the word &#x27;Hello&#x27;. It serves as a placeholder or sample data entry with no substantive informational value.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#test</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#placeholder</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#sample-data</span></div></div>",
+      "summary": "A minimal test file containing only the word 'Hello'. It serves as a placeholder or sample data entry with no substantive informational value.",
+      "tags": [
+        "test",
+        "placeholder",
+        "sample-data"
+      ],
+      "path": "wiki/Archives/test-capture-file.md",
+      "degree": 3,
+      "value": 27,
+      "color": {
+        "background": "#6B7280",
+        "border": "#4B5563",
+        "highlight": {
+          "background": "#9CA3AF",
+          "border": "#374151"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "test-video-placeholder",
+      "label": "Test Video Placeholder",
+      "group": "Archives",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Test Video Placeholder</div><div style='margin-bottom:6px;'><span style='background:#6B7280;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Archives</span> <span style='color:#9CA3AF;font-size:11px;'>• 2 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A minimal test entry used to verify system functionality. Contains no substantive information or actionable content.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#testing</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#placeholder</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#system-check</span></div></div>",
+      "summary": "A minimal test entry used to verify system functionality. Contains no substantive information or actionable content.",
+      "tags": [
+        "testing",
+        "placeholder",
+        "system-check"
+      ],
+      "path": "wiki/Archives/test-video-placeholder.md",
+      "degree": 2,
+      "value": 22,
+      "color": {
+        "background": "#6B7280",
+        "border": "#4B5563",
+        "highlight": {
+          "background": "#9CA3AF",
+          "border": "#374151"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "deep-work-habits-and-focus",
+      "label": "Deep Work Habits and Focus",
+      "group": "Areas",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Deep Work Habits and Focus</div><div style='margin-bottom:6px;'><span style='background:#3B82F6;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Areas</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Key principles for maintaining high-value cognitive output, including 90-minute focus blocks, batching shallow tasks, and evening shutdowns for neural recovery.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#deep-work</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#productivity</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#focus</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#habits</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#cal-newport</span></div></div>",
+      "summary": "Key principles for maintaining high-value cognitive output, including 90-minute focus blocks, batching shallow tasks, and evening shutdowns for neural recovery.",
+      "tags": [
+        "deep-work",
+        "productivity",
+        "focus",
+        "habits",
+        "cal-newport"
+      ],
+      "path": "wiki/Areas/deep-work-habits-and-focus.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#3B82F6",
+        "border": "#2563EB",
+        "highlight": {
+          "background": "#60A5FA",
+          "border": "#1D4ED8"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "deep-work-habits",
+      "label": "Deep Work Habits",
+      "group": "Areas",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Deep Work Habits</div><div style='margin-bottom:6px;'><span style='background:#3B82F6;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Areas</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Key principles for maintaining high-value cognitive output, including 90-minute focus blocks, batching shallow tasks, and evening shutdowns for neural recovery.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#deep-work</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#productivity</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#focus</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#habits</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#cal-newport</span></div></div>",
+      "summary": "Key principles for maintaining high-value cognitive output, including 90-minute focus blocks, batching shallow tasks, and evening shutdowns for neural recovery.",
+      "tags": [
+        "deep-work",
+        "productivity",
+        "focus",
+        "habits",
+        "cal-newport"
+      ],
+      "path": "wiki/Areas/deep-work-habits.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#3B82F6",
+        "border": "#2563EB",
+        "highlight": {
+          "background": "#60A5FA",
+          "border": "#1D4ED8"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "jaga",
+      "label": "Jaga",
+      "group": "Projects",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Jaga</div><div style='margin-bottom:6px;'><span style='background:#EF4444;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Projects</span> <span style='color:#9CA3AF;font-size:11px;'>• 1 link</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>This capture references the project &#x27;Jaga&#x27;.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#jaga</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#project</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#task</span></div></div>",
+      "summary": "This capture references the project 'Jaga'.",
+      "tags": [
+        "jaga",
+        "project",
+        "task"
+      ],
+      "path": "wiki/Projects/jaga.md",
+      "degree": 1,
+      "value": 17,
+      "color": {
+        "background": "#EF4444",
+        "border": "#DC2626",
+        "highlight": {
+          "background": "#F87171",
+          "border": "#B91C1C"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "secondself-ai-second-brain-project-plan",
+      "label": "SecondSelf AI Second Brain Project Plan",
+      "group": "Projects",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>SecondSelf AI Second Brain Project Plan</div><div style='margin-bottom:6px;'><span style='background:#EF4444;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Projects</span> <span style='color:#9CA3AF;font-size:11px;'>• 1 link</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A 4-week project plan to build SecondSelf, an autonomous AI second brain that captures, classifies, links, visualizes, and answers questions from personal knowledge. The system aims to solve the problem of information hoarding by creating a self-organizing, queryable knowledge graph deployed on a public URL.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#secondself</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#ai-second-brain</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#para-framework</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#knowledge-graph</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#rag</span></div></div>",
+      "summary": "A 4-week project plan to build SecondSelf, an autonomous AI second brain that captures, classifies, links, visualizes, and answers questions from personal knowledge. The system aims to solve the problem of information hoarding by creating a self-organizing, queryable knowledge graph deployed on a public URL.",
+      "tags": [
+        "secondself",
+        "ai-second-brain",
+        "para-framework",
+        "knowledge-graph",
+        "rag"
+      ],
+      "path": "wiki/Projects/secondself-ai-second-brain-project-plan.md",
+      "degree": 1,
+      "value": 17,
+      "color": {
+        "background": "#EF4444",
+        "border": "#DC2626",
+        "highlight": {
+          "background": "#F87171",
+          "border": "#B91C1C"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "enteric-nervous-system-overview",
+      "label": "Enteric Nervous System Overview",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Enteric Nervous System Overview</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A comprehensive reference on the enteric nervous system (ENS), detailing its structure, autonomous function, and role in gastrointestinal motility and secretion. It highlights the ENS&#x27;s independence from the central nervous system and its clinical relevance in neurogastroenterology.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#neuroscience</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#gastroenterology</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#anatomy</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#autonomic-nervous-system</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#second-brain</span></div></div>",
+      "summary": "A comprehensive reference on the enteric nervous system (ENS), detailing its structure, autonomous function, and role in gastrointestinal motility and secretion. It highlights the ENS's independence from the central nervous system and its clinical relevance in neurogastroenterology.",
+      "tags": [
+        "neuroscience",
+        "gastroenterology",
+        "anatomy",
+        "autonomic-nervous-system",
+        "second-brain"
+      ],
+      "path": "wiki/Resources/enteric-nervous-system-overview.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "fastapi-production-architecture-principles",
+      "label": "FastAPI Production Architecture Principles",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>FastAPI Production Architecture Principles</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 1 link</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Key architectural principles for production-grade FastAPI applications, including lifespan management, strict validation, structured logging, and dependency injection.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#fastapi</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#backend-architecture</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#python</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#best-practices</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#api-design</span></div></div>",
+      "summary": "Key architectural principles for production-grade FastAPI applications, including lifespan management, strict validation, structured logging, and dependency injection.",
+      "tags": [
+        "fastapi",
+        "backend-architecture",
+        "python",
+        "best-practices",
+        "api-design"
+      ],
+      "path": "wiki/Resources/fastapi-production-architecture-principles.md",
+      "degree": 1,
+      "value": 17,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "fastapi-production-architecture",
+      "label": "FastAPI Production Architecture",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>FastAPI Production Architecture</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 1 link</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Key principles for deploying FastAPI in production include lifespan handlers, strict Pydantic v2 schemas, structured JSON logging, and dependency injection for auth and DB sessions.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#fastapi</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#architecture</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#pydantic</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#logging</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#dependency-injection</span></div></div>",
+      "summary": "Key principles for deploying FastAPI in production include lifespan handlers, strict Pydantic v2 schemas, structured JSON logging, and dependency injection for auth and DB sessions.",
+      "tags": [
+        "fastapi",
+        "architecture",
+        "pydantic",
+        "logging",
+        "dependency-injection"
+      ],
+      "path": "wiki/Resources/fastapi-production-architecture.md",
+      "degree": 1,
+      "value": 17,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "jack-sparrow-bird-species",
+      "label": "Jack Sparrow Bird Species",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Jack Sparrow Bird Species</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A brief mention of Jack Sparrow.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#bird</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#species</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#wildlife</span></div></div>",
+      "summary": "A brief mention of Jack Sparrow.",
+      "tags": [
+        "bird",
+        "species",
+        "wildlife"
+      ],
+      "path": "wiki/Resources/jack-sparrow-bird-species.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "jack-sparrow-character-reference",
+      "label": "Jack Sparrow Character Reference",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Jack Sparrow Character Reference</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A brief note referencing the character Jack Sparrow, likely for use in creative writing, trivia, or media discussion.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#movies</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#pirates</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#characters</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#pop-culture</span></div></div>",
+      "summary": "A brief note referencing the character Jack Sparrow, likely for use in creative writing, trivia, or media discussion.",
+      "tags": [
+        "movies",
+        "pirates",
+        "characters",
+        "pop-culture"
+      ],
+      "path": "wiki/Resources/jack-sparrow-character-reference.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "jaga-hacker-profile",
+      "label": "Jaga Hacker Profile",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Jaga Hacker Profile</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A brief note identifying Jaga as a hacker. This entry serves as a reference point for this specific individual or persona.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#jaga</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#hacker</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#profile</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#identity</span></div></div>",
+      "summary": "A brief note identifying Jaga as a hacker. This entry serves as a reference point for this specific individual or persona.",
+      "tags": [
+        "jaga",
+        "hacker",
+        "profile",
+        "identity"
+      ],
+      "path": "wiki/Resources/jaga-hacker-profile.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "jaga-reference-note",
+      "label": "Jaga Reference Note",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Jaga Reference Note</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 1 link</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A brief placeholder note containing the single word &#x27;Jaga&#x27;, likely serving as a keyword or title for future expansion.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#jaga</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#reference</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#notes</span></div></div>",
+      "summary": "A brief placeholder note containing the single word 'Jaga', likely serving as a keyword or title for future expansion.",
+      "tags": [
+        "jaga",
+        "reference",
+        "notes"
+      ],
+      "path": "wiki/Resources/jaga-reference-note.md",
+      "degree": 1,
+      "value": 17,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "para-framework-core-definitions",
+      "label": "PARA Framework Core Definitions",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>PARA Framework Core Definitions</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 2 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A concise reference defining the four core categories of the PARA method: Projects, Areas, Resources, and Archives. This note serves as a quick lookup for organizing information within a second brain system.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#para</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#second-brain</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#productivity</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#knowledge-management</span></div></div>",
+      "summary": "A concise reference defining the four core categories of the PARA method: Projects, Areas, Resources, and Archives. This note serves as a quick lookup for organizing information within a second brain system.",
+      "tags": [
+        "para",
+        "second-brain",
+        "productivity",
+        "knowledge-management"
+      ],
+      "path": "wiki/Resources/para-framework-core-definitions.md",
+      "degree": 2,
+      "value": 22,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "para-framework-notes",
+      "label": "PARA Framework Notes",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>PARA Framework Notes</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 2 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Building a Second Brain with PARA method: Projects are short-term efforts, Areas are ongoing responsibilities, Resources are topics of interest, and A...</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#unclassified</span></div></div>",
+      "summary": "Building a Second Brain with PARA method: Projects are short-term efforts, Areas are ongoing responsibilities, Resources are topics of interest, and A...",
+      "tags": [
+        "unclassified"
+      ],
+      "path": "wiki/Resources/para-framework-notes.md",
+      "degree": 2,
+      "value": 22,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "para-framework-overview",
+      "label": "PARA Framework Overview",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>PARA Framework Overview</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 2 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A concise definition of the four core components of the PARA method: Projects, Areas, Resources, and Archives. This serves as a quick reference for organizing information within a second brain system.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#para</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#second-brain</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#productivity</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#organization</span></div></div>",
+      "summary": "A concise definition of the four core components of the PARA method: Projects, Areas, Resources, and Archives. This serves as a quick reference for organizing information within a second brain system.",
+      "tags": [
+        "para",
+        "second-brain",
+        "productivity",
+        "organization"
+      ],
+      "path": "wiki/Resources/para-framework-overview.md",
+      "degree": 2,
+      "value": 22,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "personal-knowledge-management-wikipedia",
+      "label": "Personal knowledge management - Wikipedia",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Personal knowledge management - Wikipedia</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Personal knowledge management Personal knowledge management (PKM) is a process of collecting information that a person uses to gather, classify, store...</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#unclassified</span></div></div>",
+      "summary": "Personal knowledge management Personal knowledge management (PKM) is a process of collecting information that a person uses to gather, classify, store...",
+      "tags": [
+        "unclassified"
+      ],
+      "path": "wiki/Resources/personal-knowledge-management-wikipedia.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "problem-statement",
+      "label": "Problem Statement",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Problem Statement</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 1 link</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Project: SecondSelf — Your Personal AI Second Brain ProblemStatement.md Every notes app fails the same way: you capture hundreds of notes, bookmarks,...</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#unclassified</span></div></div>",
+      "summary": "Project: SecondSelf — Your Personal AI Second Brain ProblemStatement.md Every notes app fails the same way: you capture hundreds of notes, bookmarks,...",
+      "tags": [
+        "unclassified"
+      ],
+      "path": "wiki/Resources/problem-statement.md",
+      "degree": 1,
+      "value": 17,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "rag-hallucination-guardrails",
+      "label": "RAG Hallucination Guardrails",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>RAG Hallucination Guardrails</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Retrieval-Augmented Generation (RAG) mitigates hallucinations by restricting LLM responses to retrieved context. Implementing a cosine similarity threshold ensures the system acknowledges missing information rather than fabricating facts.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#rag</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#llm</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#hallucination</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#retrieval</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#ai-safety</span></div></div>",
+      "summary": "Retrieval-Augmented Generation (RAG) mitigates hallucinations by restricting LLM responses to retrieved context. Implementing a cosine similarity threshold ensures the system acknowledges missing information rather than fabricating facts.",
+      "tags": [
+        "rag",
+        "llm",
+        "hallucination",
+        "retrieval",
+        "ai-safety"
+      ],
+      "path": "wiki/Resources/rag-hallucination-guardrails.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "secondself-edge-cases-corner-scenarios-reference",
+      "label": "SecondSelf: Edge Cases & Corner Scenarios Reference",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>SecondSelf: Edge Cases &amp; Corner Scenarios Reference</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'># SecondSelf: Edge Cases &amp; Corner Scenarios Reference **Document Version:** 1.0.0   **References:** [Problem statement.txt](file:///c:/Users/jagad/One...</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#unclassified</span></div></div>",
+      "summary": "# SecondSelf: Edge Cases & Corner Scenarios Reference **Document Version:** 1.0.0   **References:** [Problem statement.txt](file:///c:/Users/jagad/One...",
+      "tags": [
+        "unclassified"
+      ],
+      "path": "wiki/Resources/secondself-edge-cases-corner-scenarios-reference.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "secondself-system-architecture-specification",
+      "label": "SecondSelf: System Architecture Specification",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>SecondSelf: System Architecture Specification</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'># SecondSelf: System Architecture Specification **Document Version:** 1.0.0   **Target Platform:** Python 3.10+, Streamlit, Groq API / Llama 3, Senten...</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#unclassified</span></div></div>",
+      "summary": "# SecondSelf: System Architecture Specification **Document Version:** 1.0.0   **Target Platform:** Python 3.10+, Streamlit, Groq API / Llama 3, Senten...",
+      "tags": [
+        "unclassified"
+      ],
+      "path": "wiki/Resources/secondself-system-architecture-specification.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "streamlit-caching-and-state-patterns",
+      "label": "Streamlit Caching and State Patterns",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Streamlit Caching and State Patterns</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Best practices for managing Streamlit application state and performance, specifically distinguishing between resource caching, data caching, and session state usage.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#streamlit</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#python</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#caching</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#state-management</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#web-apps</span></div></div>",
+      "summary": "Best practices for managing Streamlit application state and performance, specifically distinguishing between resource caching, data caching, and session state usage.",
+      "tags": [
+        "streamlit",
+        "python",
+        "caching",
+        "state-management",
+        "web-apps"
+      ],
+      "path": "wiki/Resources/streamlit-caching-and-state-patterns.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "test-video-capture",
+      "label": "Test Video Capture",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Test Video Capture</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 3 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A minimal placeholder entry labeled &#x27;Test Video&#x27; with no additional context or content provided.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#testing</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#video</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#placeholder</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#media</span></div></div>",
+      "summary": "A minimal placeholder entry labeled 'Test Video' with no additional context or content provided.",
+      "tags": [
+        "testing",
+        "video",
+        "placeholder",
+        "media"
+      ],
+      "path": "wiki/Resources/test-video-capture.md",
+      "degree": 3,
+      "value": 27,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "vannevar-bushs-memex-concept",
+      "label": "Vannevar Bush's Memex Concept",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Vannevar Bush&#x27;s Memex Concept</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>An overview of Vannevar Bush&#x27;s 1945 &#x27;Memex&#x27; concept, a hypothetical device for associative knowledge storage that influenced the development of hypertext, personal knowledge management, and the World Wide Web.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#memex</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#hypertext</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#personal-knowledge-management</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#information-retrieval</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#history-of-computing</span></div></div>",
+      "summary": "An overview of Vannevar Bush's 1945 'Memex' concept, a hypothetical device for associative knowledge storage that influenced the development of hypertext, personal knowledge management, and the World Wide Web.",
+      "tags": [
+        "memex",
+        "hypertext",
+        "personal-knowledge-management",
+        "information-retrieval",
+        "history-of-computing"
+      ],
+      "path": "wiki/Resources/vannevar-bushs-memex-concept.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "vector-embeddings-semantic-search-guide",
+      "label": "Vector Embeddings Semantic Search Guide",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Vector Embeddings Semantic Search Guide</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 1 link</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Explains how SentenceTransformers maps sentences to 384-dimensional vectors for semantic search. Highlights the use of cosine similarity to capture conceptual meaning over exact keyword matching.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#vector-embeddings</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#semantic-search</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#nlp</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#sentence-transformers</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#machine-learning</span></div></div>",
+      "summary": "Explains how SentenceTransformers maps sentences to 384-dimensional vectors for semantic search. Highlights the use of cosine similarity to capture conceptual meaning over exact keyword matching.",
+      "tags": [
+        "vector-embeddings",
+        "semantic-search",
+        "nlp",
+        "sentence-transformers",
+        "machine-learning"
+      ],
+      "path": "wiki/Resources/vector-embeddings-semantic-search-guide.md",
+      "degree": 1,
+      "value": 17,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "vector-embeddings-semantic-search",
+      "label": "Vector Embeddings & Semantic Search",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Vector Embeddings &amp; Semantic Search</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 1 link</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>SentenceTransformers all‑MiniLM‑L6‑v2 maps sentences into a 384‑dimensional vector space, enabling semantic search via cosine similarity.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#vector-embeddings</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#semantic-search</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#sentence-transformers</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#cosine-similarity</span></div></div>",
+      "summary": "SentenceTransformers all‑MiniLM‑L6‑v2 maps sentences into a 384‑dimensional vector space, enabling semantic search via cosine similarity.",
+      "tags": [
+        "vector-embeddings",
+        "semantic-search",
+        "sentence-transformers",
+        "cosine-similarity"
+      ],
+      "path": "wiki/Resources/vector-embeddings-semantic-search.md",
+      "degree": 1,
+      "value": 17,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "visjs-knowledge-graph-layouts",
+      "label": "Vis.js Knowledge Graph Layouts",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Vis.js Knowledge Graph Layouts</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>Explains how Vis.js implements force-directed layouts using physical simulations like spring tension and Coulomb repulsion. It details how node size and color map to degree centrality and thematic clusters.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#vis-js</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#knowledge-graphs</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#force-directed-layout</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#data-visualization</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#network-analysis</span></div></div>",
+      "summary": "Explains how Vis.js implements force-directed layouts using physical simulations like spring tension and Coulomb repulsion. It details how node size and color map to degree centrality and thematic clusters.",
+      "tags": [
+        "vis-js",
+        "knowledge-graphs",
+        "force-directed-layout",
+        "data-visualization",
+        "network-analysis"
+      ],
+      "path": "wiki/Resources/visjs-knowledge-graph-layouts.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    }
+  ],
+  "edges": [
+    {
+      "from": "test-capture-entry",
+      "to": "test-capture-file",
+      "weight": 0.94,
+      "title": "Similarity: 0.94",
+      "value": 0.94,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "test-capture-entry",
+      "to": "test-video-capture",
+      "weight": 0.7,
+      "title": "Similarity: 0.70",
+      "value": 0.7,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "test-capture-file",
+      "to": "test-video-capture",
+      "weight": 0.69,
+      "title": "Similarity: 0.69",
+      "value": 0.69,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "test-capture-file",
+      "to": "test-video-placeholder",
+      "weight": 0.65,
+      "title": "Similarity: 0.65",
+      "value": 0.65,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "test-video-placeholder",
+      "to": "test-video-capture",
+      "weight": 0.86,
+      "title": "Similarity: 0.86",
+      "value": 0.86,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "jaga",
+      "to": "jaga-reference-note",
+      "weight": 0.73,
+      "title": "Similarity: 0.73",
+      "value": 0.73,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "secondself-ai-second-brain-project-plan",
+      "to": "problem-statement",
+      "weight": 0.88,
+      "title": "Similarity: 0.88",
+      "value": 0.88,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "fastapi-production-architecture-principles",
+      "to": "fastapi-production-architecture",
+      "weight": 0.93,
+      "title": "Similarity: 0.93",
+      "value": 0.93,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "para-framework-core-definitions",
+      "to": "para-framework-overview",
+      "weight": 0.96,
+      "title": "Similarity: 0.96",
+      "value": 0.96,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "para-framework-core-definitions",
+      "to": "para-framework-notes",
+      "weight": 0.83,
+      "title": "Similarity: 0.83",
+      "value": 0.83,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "para-framework-notes",
+      "to": "para-framework-overview",
+      "weight": 0.84,
+      "title": "Similarity: 0.84",
+      "value": 0.84,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    },
+    {
+      "from": "vector-embeddings-semantic-search-guide",
+      "to": "vector-embeddings-semantic-search",
+      "weight": 0.93,
+      "title": "Similarity: 0.93",
+      "value": 0.93,
+      "color": {
+        "color": "#4B5563",
+        "highlight": "#93C5FD",
+        "hover": "#60A5FA"
+      }
+    }
+  ],
+  "stats": {
+    "total_nodes": 28,
+    "total_edges": 12,
+    "categories": {
+      "Archives": 3,
+      "Areas": 2,
+      "Projects": 2,
+      "Resources": 21
+    }
+  }
+}
