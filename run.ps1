@@ -1,4 +1,4 @@
-﻿# SecondSelf: Streamlit Launch Script for PowerShell
+# SecondSelf: Streamlit Launch Script for PowerShell
 Write-Host "=================================================================" -ForegroundColor Cyan
 Write-Host " 🧠 Starting SecondSelf: Your Personal AI Second Brain" -ForegroundColor Cyan
 Write-Host "=================================================================" -ForegroundColor Cyan

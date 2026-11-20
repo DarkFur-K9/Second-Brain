@@ -1,0 +1,16 @@
+{
+  "id": "20261120-090308-8b590d",
+  "timestamp": "2026-11-20T09:03:08.037800+00:00",
+  "source_type": "text",
+  "source_ref": "manual",
+  "title": "Python Learning Plan",
+  "raw_content": "Python is a programming language. I want to learn Python for AI development, automation, and cybersecurity.",
+  "content_hash": "0de4f861f9dba8557b5b32ec3010e5716afee037af7fe46fbb377418d2057b3a",
+  "tags": [
+    "python",
+    "learning",
+    "programming"
+  ],
+  "metadata": {},
+  "processed": true
+}

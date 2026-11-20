@@ -179,6 +179,37 @@
       "shape": "dot"
     },
     {
+      "id": "python-learning-plan",
+      "label": "Python Learning Plan",
+      "group": "Projects",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Python Learning Plan</div><div style='margin-bottom:6px;'><span style='background:#EF4444;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Projects</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A structured initiative to acquire Python programming skills specifically for applications in AI, automation, and cybersecurity.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#python</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#ai-development</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#automation</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#cybersecurity</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#learning</span></div></div>",
+      "summary": "A structured initiative to acquire Python programming skills specifically for applications in AI, automation, and cybersecurity.",
+      "tags": [
+        "python",
+        "ai-development",
+        "automation",
+        "cybersecurity",
+        "learning"
+      ],
+      "path": "wiki/Projects/python-learning-plan.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#EF4444",
+        "border": "#DC2626",
+        "highlight": {
+          "background": "#F87171",
+          "border": "#B91C1C"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
       "id": "secondself-ai-second-brain-project-plan",
       "label": "SecondSelf AI Second Brain Project Plan",
       "group": "Projects",
@@ -200,6 +231,37 @@
         "highlight": {
           "background": "#F87171",
           "border": "#B91C1C"
+        }
+      },
+      "font": {
+        "color": "#F3F4F6",
+        "size": 13,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "dot"
+    },
+    {
+      "id": "artificial-intelligence-overview",
+      "label": "Artificial Intelligence Overview",
+      "group": "Resources",
+      "title": "<div style='font-family:sans-serif;max-width:280px;padding:8px;'><div style='font-weight:bold;font-size:14px;color:#F9FAFB;margin-bottom:4px;'>Artificial Intelligence Overview</div><div style='margin-bottom:6px;'><span style='background:#10B981;color:#FFF;padding:2px 6px;border-radius:4px;font-size:11px;font-weight:bold;'>Resources</span> <span style='color:#9CA3AF;font-size:11px;'>• 0 links</span></div><div style='color:#D1D5DB;font-size:12px;line-height:1.4;margin-bottom:6px;'>A comprehensive overview of Artificial Intelligence, covering its definition, historical development, and core research goals such as reasoning, learning, and perception. It details key techniques including neural networks, natural language processing, and search algorithms, along with current applications and ethical considerations.</div><div><span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#artificial-intelligence</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#machine-learning</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#deep-learning</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#nlp</span> <span style='background:#374151;color:#E5E7EB;padding:2px 6px;border-radius:4px;font-size:11px;'>#computer-science</span></div></div>",
+      "summary": "A comprehensive overview of Artificial Intelligence, covering its definition, historical development, and core research goals such as reasoning, learning, and perception. It details key techniques including neural networks, natural language processing, and search algorithms, along with current applications and ethical considerations.",
+      "tags": [
+        "artificial-intelligence",
+        "machine-learning",
+        "deep-learning",
+        "nlp",
+        "computer-science"
+      ],
+      "path": "wiki/Resources/artificial-intelligence-overview.md",
+      "degree": 0,
+      "value": 12,
+      "color": {
+        "background": "#10B981",
+        "border": "#059669",
+        "highlight": {
+          "background": "#34D399",
+          "border": "#047857"
         }
       },
       "font": {
@@ -978,13 +1040,13 @@
     }
   ],
   "stats": {
-    "total_nodes": 28,
+    "total_nodes": 30,
     "total_edges": 12,
     "categories": {
       "Archives": 3,
       "Areas": 2,
-      "Projects": 2,
-      "Resources": 21
+      "Projects": 3,
+      "Resources": 22
     }
   }
 }

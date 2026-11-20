@@ -31,6 +31,15 @@ from src.ask import ask_stream, retrieve_relevant_notes
 # Load environment variables
 load_dotenv()
 
+# Propagate Streamlit Community Cloud secrets to environment variables
+try:
+    if hasattr(st, "secrets"):
+        for _sec_key in ["GROQ_API_KEY", "GROQ_MODEL", "RAG_MIN_SIMILARITY"]:
+            if _sec_key in st.secrets and _sec_key not in os.environ:
+                os.environ[_sec_key] = str(st.secrets[_sec_key])
+except Exception:
+    pass
+
 # Page Configuration
 st.set_page_config(
     page_title="SecondSelf — Your Personal AI Second Brain",
@@ -185,6 +194,13 @@ if "messages" not in st.session_state:
             "sources": [],
         }
     ]
+
+# Auto-heal embedding cache if missing on cloud container boot
+if not DEFAULT_CACHE_FILE.exists() and DEFAULT_WIKI_DIR.exists():
+    try:
+        auto_link_wiki()
+    except Exception:
+        pass
 
 # Pre-load embedding model in background
 get_cached_embedder()

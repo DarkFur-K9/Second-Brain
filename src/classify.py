@@ -79,12 +79,21 @@ Rules:
 
 
 def get_groq_client():
-    """Initialize Groq client with API key from environment."""
+    """Initialize Groq client with API key from environment or Streamlit secrets."""
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
+        try:
+            import streamlit as st
+            if hasattr(st, "secrets") and "GROQ_API_KEY" in st.secrets:
+                api_key = str(st.secrets["GROQ_API_KEY"])
+                os.environ["GROQ_API_KEY"] = api_key
+        except Exception:
+            pass
+
+    if not api_key:
         raise ValueError(
-            "GROQ_API_KEY not found in environment or .env file. "
-            "Please obtain a free key at https://console.groq.com and set GROQ_API_KEY in .env."
+            "GROQ_API_KEY not found in environment, .env file, or Streamlit Secrets. "
+            "Please obtain a free key at https://console.groq.com and configure GROQ_API_KEY."
         )
     from groq import Groq
 
@@ -96,6 +105,13 @@ def get_best_model(client, preferred: Optional[str] = None) -> str:
     if preferred:
         return preferred
     env_model = os.getenv("GROQ_MODEL")
+    if not env_model:
+        try:
+            import streamlit as st
+            if hasattr(st, "secrets") and "GROQ_MODEL" in st.secrets:
+                env_model = str(st.secrets["GROQ_MODEL"])
+        except Exception:
+            pass
     if env_model:
         return env_model
 

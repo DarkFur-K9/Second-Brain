@@ -15,9 +15,9 @@ __pycache__/
 *.so
 .pytest_cache/
 
-# Local Embedding & Vector Caches
-wiki/.embeddings.npz
+# Local Embedding & Vector Caches (uncomment to exclude, or keep tracked for instant cold start)
 *.npz
+!wiki/.embeddings.npz
 
 # Obsidian Settings
 .obsidian/
